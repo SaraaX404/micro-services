@@ -1,0 +1,28 @@
+{
+  "name": "micro-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm i && npm start",
+    "comments": "cd comments && npm i && npm start",
+    "eventBus": "cd event-bus && npm i && npm start",
+    "posts": "cd posts && npm i && npm start",
+    "query": "cd query && npm i && npm start",
+    "start": "concurrently npm:client npm:comments npm:eventBus npm:posts npm:query"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaraaX404/micro-services.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaraaX404/micro-services/issues"
+  },
+  "homepage": "https://github.com/SaraaX404/micro-services#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
